@@ -18,13 +18,73 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "content"
+    },
+    {
+      "name": "B1",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_1"
+    },
+    {
+      "name": "B2",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_2"
+    },
+    {
+      "name": "B3",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_3"
+    },
+    {
+      "name": "B4",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_4"
+    },
+    {
+      "name": "B5",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_5"
+    },
+    {
+      "name": "B6",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_6"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.content_plus.b_0": "B 0",
+      "block.content_plus.b_6": "Block",
+      "block.content_plus.b_3": "Block",
+      "block.content_plus.b_2": "Block",
+      "block.content_plus.b_5": "Block",
+      "block.content_plus.b_4": "Block",
+      "block.content_plus.b_1": "Block",
+      "block.content_plus.b_0": "Block",
       "itemGroup.tabcontent": "Content"
     }
   },

@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
@@ -41,11 +42,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ContentPlusModElements.ModElement.Tag
-public class B0Block extends ContentPlusModElements.ModElement {
-	@ObjectHolder("content_plus:b_0")
+public class B5Block extends ContentPlusModElements.ModElement {
+	@ObjectHolder("content_plus:b_5")
 	public static final Block block = null;
-	public B0Block(ContentPlusModElements instance) {
-		super(instance, 1);
+	public B5Block(ContentPlusModElements instance) {
+		super(instance, 7);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -57,9 +58,9 @@ public class B0Block extends ContentPlusModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1500000000000001f, 0.5f)
-					.setLightLevel(s -> 0));
-			setRegistryName("b_0");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.CLOTH).hardnessAndResistance(1.45f, 0f).setLightLevel(s -> 0).harvestLevel(0)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("b_5");
 		}
 
 		@Override
@@ -78,7 +79,7 @@ public class B0Block extends ContentPlusModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.SAND.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -91,7 +92,7 @@ public class B0Block extends ContentPlusModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("content_plus:b_0_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("content_plus:b_5_match"), () -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
@@ -104,10 +105,10 @@ public class B0Block extends ContentPlusModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(200)
-					.square().func_242731_b(10);
-			event.getRegistry().register(feature.setRegistryName("b_0"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("content_plus:b_0"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 11)).range(75)
+					.square().func_242731_b(9);
+			event.getRegistry().register(feature.setRegistryName("b_5"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("content_plus:b_5"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
