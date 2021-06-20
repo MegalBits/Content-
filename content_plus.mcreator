@@ -1,0 +1,53 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "B0",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_0"
+    },
+    {
+      "name": "Content",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "content"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.content_plus.b_0": "B 0",
+      "itemGroup.tabcontent": "Content"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "content_plus",
+    "modName": "Content+",
+    "version": "1.0.0",
+    "author": "gsugrue, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.contentplus",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
