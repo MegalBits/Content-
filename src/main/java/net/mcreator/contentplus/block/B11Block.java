@@ -42,11 +42,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ContentPlusModElements.ModElement.Tag
-public class B4Block extends ContentPlusModElements.ModElement {
-	@ObjectHolder("content_plus:b_4")
+public class B11Block extends ContentPlusModElements.ModElement {
+	@ObjectHolder("content_plus:b_11")
 	public static final Block block = null;
-	public B4Block(ContentPlusModElements instance) {
-		super(instance, 6);
+	public B11Block(ContentPlusModElements instance) {
+		super(instance, 24);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -58,9 +58,9 @@ public class B4Block extends ContentPlusModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.SNOW).sound(SoundType.HONEY).hardnessAndResistance(0.2f, 1f).setLightLevel(s -> 0).harvestLevel(1)
-					.harvestTool(ToolType.SHOVEL).setRequiresTool());
-			setRegistryName("b_4");
+			super(Block.Properties.create(Material.CORAL).sound(SoundType.CHAIN).hardnessAndResistance(3.65f, 0.5f).setLightLevel(s -> 0)
+					.harvestLevel(0).harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("b_11");
 		}
 
 		@Override
@@ -79,11 +79,13 @@ public class B4Block extends ContentPlusModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.GRASS_BLOCK.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.GRASS_PATH.getDefaultState().getBlock())
 				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.DIRT.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.PODZOL.getDefaultState().getBlock())
 				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.GRAVEL.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.GRANITE.getDefaultState().getBlock())
+				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -96,7 +98,7 @@ public class B4Block extends ContentPlusModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("content_plus:b_4_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("content_plus:b_11_match"), () -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
@@ -109,10 +111,10 @@ public class B4Block extends ContentPlusModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 14)).range(200)
-					.square().func_242731_b(24);
-			event.getRegistry().register(feature.setRegistryName("b_4"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("content_plus:b_4"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 12)).range(90)
+					.square().func_242731_b(21);
+			event.getRegistry().register(feature.setRegistryName("b_11"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("content_plus:b_11"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

@@ -72,17 +72,289 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "b_6"
+    },
+    {
+      "name": "B7",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_7"
+    },
+    {
+      "name": "B8",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_8"
+    },
+    {
+      "name": "B9",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_9"
+    },
+    {
+      "name": "B0c",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_0c"
+    },
+    {
+      "name": "B1c",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_1c"
+    },
+    {
+      "name": "B2c",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_2c"
+    },
+    {
+      "name": "B3c",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_3c"
+    },
+    {
+      "name": "B4c",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_4c"
+    },
+    {
+      "name": "B5c",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_5c"
+    },
+    {
+      "name": "B6c",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_6c"
+    },
+    {
+      "name": "B7c",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_7c"
+    },
+    {
+      "name": "B8c",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_8c"
+    },
+    {
+      "name": "B9c",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_9c"
+    },
+    {
+      "name": "B10",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_10"
+    },
+    {
+      "name": "B10c",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_10c"
+    },
+    {
+      "name": "B11",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_11"
+    },
+    {
+      "name": "B11c",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_11c"
+    },
+    {
+      "name": "B12",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_12"
+    },
+    {
+      "name": "B12c",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_12c"
+    },
+    {
+      "name": "B13",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_13"
+    },
+    {
+      "name": "B14",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_14"
+    },
+    {
+      "name": "B13c",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_13c"
+    },
+    {
+      "name": "B14c",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_14c"
+    },
+    {
+      "name": "B15",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_15"
+    },
+    {
+      "name": "B15c",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_15c"
+    },
+    {
+      "name": "B16",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_16"
+    },
+    {
+      "name": "B16c",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_16c"
+    },
+    {
+      "name": "B17",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_17"
+    },
+    {
+      "name": "B17c",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_17c"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.content_plus.b_17": "Block",
+      "block.content_plus.b_7": "Block",
       "block.content_plus.b_6": "Block",
+      "block.content_plus.b_10": "Block",
+      "block.content_plus.b_9": "Block",
+      "block.content_plus.b_11": "Block",
+      "block.content_plus.b_8": "Block",
+      "block.content_plus.b_12": "Block",
       "block.content_plus.b_3": "Block",
+      "block.content_plus.b_13": "Block",
       "block.content_plus.b_2": "Block",
+      "block.content_plus.b_14": "Block",
       "block.content_plus.b_5": "Block",
+      "block.content_plus.b_15": "Block",
       "block.content_plus.b_4": "Block",
+      "block.content_plus.b_16": "Block",
       "block.content_plus.b_1": "Block",
       "block.content_plus.b_0": "Block",
       "itemGroup.tabcontent": "Content"

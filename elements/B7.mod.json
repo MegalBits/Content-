@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "b_4",
+    "texture": "b_7",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -34,8 +34,8 @@
     ],
     "name": "Block",
     "specialInfo": [],
-    "hardness": 0.2,
-    "resistance": 1.0,
+    "hardness": 0.95,
+    "resistance": 0.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "SNOW"
+      "value": "SPONGE"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,11 +72,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "HONEY"
+      "value": "SAND"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -107,18 +107,12 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.GRAVEL"
+        "value": "Blocks.STONE#5"
       }
     ],
-    "frequencyPerChunks": 24,
-    "frequencyOnChunk": 14,
+    "frequencyPerChunks": 14,
+    "frequencyOnChunk": 18,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 200
+    "maxGenerateHeight": 60
   }
 }
