@@ -126,26 +126,206 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "b_12"
+    },
+    {
+      "name": "B13",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_13"
+    },
+    {
+      "name": "B14",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_14"
+    },
+    {
+      "name": "B15",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_15"
+    },
+    {
+      "name": "B16",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_16"
+    },
+    {
+      "name": "B17",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_17"
+    },
+    {
+      "name": "B18",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_18"
+    },
+    {
+      "name": "B19",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_19"
+    },
+    {
+      "name": "B20",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_20"
+    },
+    {
+      "name": "B21",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_21"
+    },
+    {
+      "name": "B22",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_22"
+    },
+    {
+      "name": "B23",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_23"
+    },
+    {
+      "name": "B24",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_24"
+    },
+    {
+      "name": "B25",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_25"
+    },
+    {
+      "name": "B26",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_26"
+    },
+    {
+      "name": "B27",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_27"
+    },
+    {
+      "name": "B28",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_28"
+    },
+    {
+      "name": "B29",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_29"
+    },
+    {
+      "name": "B30",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "b_30"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.content_plus.b_28": "Block",
+      "block.content_plus.b_29": "Block",
+      "block.content_plus.b_20": "Block",
+      "block.content_plus.b_21": "Block",
+      "block.content_plus.b_22": "Block",
+      "block.content_plus.b_23": "Block",
+      "block.content_plus.b_24": "Block",
+      "block.content_plus.b_25": "Block",
+      "block.content_plus.b_26": "Block",
+      "block.content_plus.b_27": "Block",
+      "block.content_plus.b_17": "Block",
+      "block.content_plus.b_18": "Block",
+      "block.content_plus.b_19": "Block",
       "block.content_plus.b_7": "Block",
-      "block.content_plus.b_6": "Block",
       "block.content_plus.b_10": "Block",
-      "block.content_plus.b_9": "Block",
+      "block.content_plus.b_6": "Block",
       "block.content_plus.b_11": "Block",
+      "block.content_plus.b_9": "Block",
       "block.content_plus.b_8": "Block",
       "block.content_plus.b_12": "Block",
       "block.content_plus.b_3": "Block",
+      "block.content_plus.b_13": "Block",
       "block.content_plus.b_2": "Block",
+      "block.content_plus.b_14": "Block",
       "block.content_plus.b_5": "Block",
+      "block.content_plus.b_15": "Block",
       "block.content_plus.b_4": "Block",
+      "block.content_plus.b_16": "Block",
       "block.content_plus.b_1": "Block",
       "itemGroup.tabcontent_plus": "Content +",
-      "block.content_plus.b_0": "Block"
+      "block.content_plus.b_0": "Block",
+      "block.content_plus.b_30": "Block"
     }
   },
   "foldersRoot": {

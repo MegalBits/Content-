@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "content_plus:blocks/b18",
+    "particle": "content_plus:blocks/b18"
+  }
+}
