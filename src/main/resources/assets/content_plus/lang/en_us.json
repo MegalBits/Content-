@@ -1,5 +1,4 @@
 {
-  "block.content_plus.b_17": "Block",
   "block.content_plus.b_7": "Block",
   "block.content_plus.b_6": "Block",
   "block.content_plus.b_10": "Block",
@@ -8,14 +7,10 @@
   "block.content_plus.b_8": "Block",
   "block.content_plus.b_12": "Block",
   "block.content_plus.b_3": "Block",
-  "block.content_plus.b_13": "Block",
   "block.content_plus.b_2": "Block",
-  "block.content_plus.b_14": "Block",
   "block.content_plus.b_5": "Block",
-  "block.content_plus.b_15": "Block",
   "block.content_plus.b_4": "Block",
-  "block.content_plus.b_16": "Block",
   "block.content_plus.b_1": "Block",
-  "block.content_plus.b_0": "Block",
-  "itemGroup.tabcontent": "Content"
+  "itemGroup.tabcontent_plus": "Content +",
+  "block.content_plus.b_0": "Block"
 }

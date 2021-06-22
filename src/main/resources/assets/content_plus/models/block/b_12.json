@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "content_plus:blocks/b_12",
-    "particle": "content_plus:blocks/b_12"
+    "all": "content_plus:blocks/b_11",
+    "particle": "content_plus:blocks/b_11"
   }
 }

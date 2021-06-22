@@ -34,16 +34,16 @@
     ],
     "name": "Block",
     "specialInfo": [],
-    "hardness": 0.2,
-    "resistance": 1.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Content"
+      "value": "CUSTOM:ContentPlus"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.COBBLESTONE"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "SNOW"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,11 +72,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "HONEY"
+      "value": "STONE"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -107,17 +107,11 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.GRAVEL"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 24,
-    "frequencyOnChunk": 14,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 200
   }

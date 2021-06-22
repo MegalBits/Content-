@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "tab",
   "definition": {
-    "name": "Content",
+    "name": "Content +",
     "icon": {
-      "value": "CUSTOM:B0"
+      "value": "Blocks.EMERALD_BLOCK"
     },
     "showSearch": false
   }

@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
@@ -33,7 +34,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.contentplus.itemgroup.ContentItemGroup;
+import net.mcreator.contentplus.itemgroup.ContentPlusItemGroup;
 import net.mcreator.contentplus.ContentPlusModElements;
 
 import java.util.Random;
@@ -53,11 +54,13 @@ public class B9Block extends ContentPlusModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ContentItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(ContentPlusItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.STEM).hardnessAndResistance(0.3f, 0.5f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(0)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("b_9");
 		}
 
@@ -66,7 +69,7 @@ public class B9Block extends ContentPlusModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(Blocks.COBBLESTONE, (int) (1)));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -77,7 +80,7 @@ public class B9Block extends ContentPlusModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.MYCELIUM.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -103,7 +106,7 @@ public class B9Block extends ContentPlusModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 17)).range(120)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(200)
 					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("b_9"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("content_plus:b_9"), configuredFeature);

@@ -34,7 +34,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.contentplus.itemgroup.ContentItemGroup;
+import net.mcreator.contentplus.itemgroup.ContentPlusItemGroup;
 import net.mcreator.contentplus.ContentPlusModElements;
 
 import java.util.Random;
@@ -54,12 +54,13 @@ public class B6Block extends ContentPlusModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ContentItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new BlockItem(block, new Item.Properties().group(ContentPlusItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.NETHER_WART).hardnessAndResistance(2.75f, 1.5f).setLightLevel(s -> 0)
-					.harvestLevel(0).harvestTool(ToolType.HOE).setRequiresTool());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).harvestLevel(0)
+					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("b_6");
 		}
 
@@ -68,7 +69,7 @@ public class B6Block extends ContentPlusModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(Blocks.COBBLESTONE, (int) (1)));
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
@@ -79,9 +80,7 @@ public class B6Block extends ContentPlusModElements.ModElement {
 		static final com.mojang.serialization.Codec<CustomRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
 		public boolean test(BlockState blockAt, Random random) {
 			boolean blockCriteria = false;
-			if (blockAt.getBlock() == Blocks.DIORITE.getDefaultState().getBlock())
-				blockCriteria = true;
-			if (blockAt.getBlock() == Blocks.GRANITE.getDefaultState().getBlock())
+			if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 				blockCriteria = true;
 			return blockCriteria;
 		}
@@ -107,8 +106,8 @@ public class B6Block extends ContentPlusModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 11)).range(75)
-					.square().func_242731_b(9);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(200)
+					.square().func_242731_b(10);
 			event.getRegistry().register(feature.setRegistryName("b_6"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("content_plus:b_6"), configuredFeature);
 		}

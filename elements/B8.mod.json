@@ -34,16 +34,16 @@
     ],
     "name": "Block",
     "specialInfo": [],
-    "hardness": 0.45,
-    "resistance": 0.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Content"
+      "value": "CUSTOM:ContentPlus"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.COBBLESTONE"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -52,7 +52,7 @@
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "FIRE"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -72,7 +72,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "CROP"
+      "value": "STONE"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -107,12 +107,12 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.GRAVEL"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 22,
-    "frequencyOnChunk": 11,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 60
+    "maxGenerateHeight": 200
   }
 }
